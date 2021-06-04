@@ -1,0 +1,23 @@
+{
+  "name": "fizzbuzz",
+  "version": "1.0.0",
+  "description": "FizzBuzz Game Challenge",
+  "main": "fizzBuzz-Game.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sandrew94/fizzbuzz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sandrew94/fizzbuzz/issues"
+  },
+  "homepage": "https://github.com/Sandrew94/fizzbuzz#readme",
+  "devDependencies": {
+    "jest": "^27.0.4"
+  }
+}
