@@ -4,8 +4,8 @@
 
 //Step 1
 
-const fizzBuzz1 = function () {
-  const numberTo = Array.from(Array(100 + 1).keys());
+const fizzBuzz1 = function (num) {
+  const numberTo = Array.from(Array(num), (_, i) => 1 + i);
   numberTo.map((val, idx, arr) => {
     if (val % 3 === 0 && val % 5 === 0) return (arr[idx] = "FizzBuzz");
     if (val % 3 === 0) return (arr[idx] = "Fizz");
@@ -14,7 +14,7 @@ const fizzBuzz1 = function () {
   return numberTo;
 };
 
-fizzBuzz1();
+//console.log(fizzBuzz1(100));
 
 ////////////////////////////////////////////////
 
@@ -42,8 +42,9 @@ const fizzBuzz2 = function (min, max) {
 
 //ALL STEPS
 const functions = {
-  step1: fizzBuzz1(),
-  step2: fizzBuzz2(15, 30),
+  step1: fizzBuzz1,
+  step2: fizzBuzz2,
 };
+//console.log(functions.step2);
 
 module.exports = functions;

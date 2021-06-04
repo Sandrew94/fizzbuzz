@@ -1,9 +1,7 @@
-const functions = require("./fizzBuzz-Game.js");
+const { step1, step2 } = require("./fizzBuzz-Game.js");
 
-test("test multiple of 5 and 3 FizzBuzz, 100 elements", () => {
-  const Step1 = functions.step1;
-  expect(Step1).toEqual([
-    "FizzBuzz",
+test("test multiple of 5 and 3 (FizzBuzz), multiple of 3(Fizz),multiple of 5(Buzz), 1-100 elements", () => {
+  expect(step1(100)).toEqual([
     1,
     2,
     "Fizz",
@@ -111,9 +109,8 @@ test("test multiple of 5 and 3 FizzBuzz, 100 elements", () => {
 
 //STEP-2
 
-test("test multiple of 5 and 3 FizzBuzz, min:15 - max:30 elements", () => {
-  const Step2 = functions.step2;
-  expect(Step2).toEqual([
+test("test multiple of 5 and 3 (FizzBuzz), multiple of 3(Fizz),multiple of 5(Buzz) min:15 - max:30 elements", () => {
+  expect(step2(15, 30)).toStrictEqual([
     "FizzBuzz",
     16,
     17,
