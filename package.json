@@ -4,7 +4,7 @@
   "description": "FizzBuzz Game Challenge",
   "main": "fizzBuzz-Game.js",
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --watch"
   },
   "repository": {
     "type": "git",
