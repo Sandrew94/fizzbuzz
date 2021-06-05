@@ -81,12 +81,45 @@ const fizzBuzz4 = function (min, max) {
   return numberTo;
 };
 
+///////////////////////////////////
+//////////////////////////////////
+
+// Step5
+
+const fizzBuzz5 = function (min, max, reverseValue = true) {
+  const numberTo = rangeMinMax(min, max);
+  numberTo.map((val, idx, arr) => {
+    if (val % 3 === 0 && val % 5 === 0) return (arr[idx] = "FizzBuzz");
+    //if (false) reverse value
+    if (val % 3 === 0) return (arr[idx] = `${reverseValue ? "Buzz" : "Fizz"}`);
+    if (val % 5 === 0) return (arr[idx] = `${reverseValue ? "Fizz" : "Buzz"}`);
+    if (val % 7 === 0 && val % 11 === 0) return (arr[idx] = "FooBoo");
+    if (val % 7 === 0) return (arr[idx] = "Foo");
+    if (val % 11 === 0) return (arr[idx] = "Boo");
+    if (val < 16) return (arr[idx] = "Small");
+    if (val > 95) return (arr[idx] = "Big");
+  });
+  return numberTo;
+};
+
+console.log(fizzBuzz5(1, 30, false));
+///////////////////////////////////
+//////////////////////////////////
+
+// Step6
+
+//console.log(fizzBuzz6(1, 100));
+///////////////////////////////////
+//////////////////////////////////
+
 //ALL STEPS
 const functions = {
   step1: fizzBuzz1,
   step2: fizzBuzz2,
   step3: fizzBuzz3,
   step4: fizzBuzz4,
+  step5: fizzBuzz5,
+  //  step6: fizzBuzz6,
 };
 
 module.exports = functions;

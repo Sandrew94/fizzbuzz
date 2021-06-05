@@ -335,3 +335,43 @@ test(" 1- test multiple of 5 and 3 (FizzBuzz), multiple of 3(Fizz),multiple of 5
     "Buzz",
   ]);
 });
+
+///////////////////////////////////////
+////////////////////////////////////////
+
+//STEP 5
+
+test(" 1- test multiple of 5 and 3 (FizzBuzz), multiple of 3(Fizz),multiple of 5(Buzz); 2- min:1 - max:100 elements; 3- add multiple of 7 (Foo), 11(Boo) and both togheder (FooBoo); 4- numbers < 16 return Small, numbers > 95 return Big; 5- Reverse multiple of 5 and 3 if(FALSE) Fizz to Buzz", () => {
+  expect(step5(1, 30, false)).toEqual([
+    "Small",
+    "Small",
+    "Fizz",
+    "Small",
+    "Buzz",
+    "Fizz",
+    "Foo",
+    "Small",
+    "Fizz",
+    "Buzz",
+    "Boo",
+    "Fizz",
+    "Small",
+    "Foo",
+    "FizzBuzz",
+    16,
+    17,
+    "Fizz",
+    19,
+    "Buzz",
+    "Fizz",
+    "Boo",
+    23,
+    "Fizz",
+    "Buzz",
+    26,
+    "Fizz",
+    "Foo",
+    29,
+    "FizzBuzz",
+  ]);
+});
