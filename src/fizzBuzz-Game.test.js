@@ -381,7 +381,7 @@ test(" 1- test multiple of 5 and 3 (FizzBuzz), multiple of 3(Fizz),multiple of 5
 
 //STEP 6
 
-test(" 1- test multiple of 3 AND 5 return FWT, multiples of 3 or 5 return GG; 2- min:1 - max:20 elements; 3- add multiple of 7 (Foo), 11(Boo) and both togheder (FooBoo); 4- numbers < 16 return Small, numbers > 95 return Big", () => {
+test(" 1- test multiple of 3 AND 5 return FWT, multiples of 3 OR 5 return GG; 2- min:1 - max:20 elements; 3- add multiple of 7 (Foo), 11(Boo) and both togheder (FooBoo); 4- numbers < 16 return Small, numbers > 95 return Big", () => {
   expect(step6(1, 20)).toEqual([
     "Small",
     "Small",
