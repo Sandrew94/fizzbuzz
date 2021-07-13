@@ -14,11 +14,6 @@
         <li><a href="#built-with">Built With</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        </ul>
-    </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -30,8 +25,9 @@
 ## About The Project
 
 - In this project i resolve all steps, one by one.
+- Click 'details' to see all of them.
 
-<details open="close">
+<details close>
 
 ### Step 1
 
@@ -58,6 +54,8 @@ Add ability to change rules for initial requirement, instead of "Fizz" (multiple
 Add new rule for "multiples of 3 and 5" return "FTW", and for "multiples of 3 or 5" return "GG"
 
 </details>
+
+<br>
 
 ### Built With
 
